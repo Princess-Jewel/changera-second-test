@@ -1,10 +1,9 @@
-import React from 'react';
+import React from "react";
 import "../home/HomeMain.css";
 
 const HomeMain = () => {
-  return (
-    <div>HomeMain</div>
-  )
-}
+  let username = JSON.parse(sessionStorage.getItem("username"));
+  return <div>{username} is here</div>;
+};
 
-export default HomeMain
+export default HomeMain;

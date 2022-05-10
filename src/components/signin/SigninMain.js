@@ -1,22 +1,15 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import "./SigninMain.css";
 
 const SigninMain = () => {
+  let history = useHistory();
   const [usernameValue, setUsernameValue] = useState("");
 
-  console.log(usernameValue);
   const princess = () => {
-    console.log("princess");
+    sessionStorage.setItem("username", JSON.stringify(usernameValue));
+    history.push("/home");
   }
-  // const handleInputChange = e => {
-  //   const { value } = e.target;
-  //   console.log("Username value: ", value);
-
-  //   const re = /^[A-Za-z]+$/;
-  //   if (value === "" || re.test(value)) {
-  //     setUsernameValue(value);
-  //   }
-  // };
   return (
     // <div className="signin__section">
     <div className="signin__home">
