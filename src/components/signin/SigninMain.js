@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 import "./SigninMain.css";
 
 const SigninMain = () => {
-  let history = useHistory();
+  const navigate = useNavigate();
   const [usernameValue, setUsernameValue] = useState("");
 
   const princess = () => {
     sessionStorage.setItem("username", JSON.stringify(usernameValue));
-    history.push("/home");
+    navigate('/home');
   }
   return (
     // <div className="signin__section">

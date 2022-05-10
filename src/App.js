@@ -8,6 +8,7 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
+        {/* <Route path="/signin" element={<Signin />}></Route> */}
           <Route path="/home" element={<Home />}></Route>
           <Route path="/" element={<Signin />}></Route>
         </Routes>
