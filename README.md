@@ -3,7 +3,7 @@
 
 
 I have a deployed my solution on [Vercel](https://www.vercel.com/)<br>
-click the following link to check my solution [https://bitmama-challenge.netlify.app/](https://bitmama-challenge.netlify.app/)
+click the following link to check my solution [https://changera-second-test.vercel.app/](https://changera-second-test.vercel.app/)
 
 And also deployed my solution on [Github Pages](https://github.com/Princess-Jewel/changera-second-test)
 
